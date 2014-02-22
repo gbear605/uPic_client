@@ -57,13 +57,47 @@ testObject.save({foo: "bar"}).then(function(object) {
 //What happend when you click on the images
 $(document).ready(function(){
 	$("#img1").click(function(){
+<<<<<<< HEAD
+		//$("#img2").fadeTo("slow", 0);
+		//$("#img1").fadeTo("slow", 0);
+		incrementVote("imageOneVotes");
+=======
+>>>>>>> 946d51e1f03184862eace534c3a88ef245c815a6
 		cycle();
+
 	});
 	$("#img2").click(function(){
+<<<<<<< HEAD
+		//$("#img2").fadeTo("slow", 0);
+		//$("#img1").fadeTo("slow", 0);
+		incrementVote("imageTwoVotes");
 		cycle();
+
+=======
+		cycle();
+>>>>>>> 946d51e1f03184862eace534c3a88ef245c815a6
 	});
 });
 
+//increments the vote for the inputed string (imageOneVotes or imageTwoVotes)
+function incrementVote(vote){
+	var query = new Parse.Query(Polls);
+	query.equalTo("objectId", images[index].id);
+	query.first({
+		success: function (Result) {
+			Result.save(null, {
+				success: function (result) {
+					var currentVotes = result.get(vote);
+					result.set(vote, currentVotes+1);
+
+					result.save();
+				}
+			})
+		}
+	});
+}
+
+//cycles to the next images
 function cycle(){
 	index++;
 	var image1 = document.getElementById("img1");
