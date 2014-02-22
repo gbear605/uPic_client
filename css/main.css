@@ -69,3 +69,16 @@ html, body {
     width:auto;
 }
 
+#image-file{
+    background-color: transparent;
+    width:200px;
+}
+
+#addPic{
+    width:100px;
+    margin-left:450px;
+}
+#in{
+    width:70px;
+    margin-left:10%;
+}

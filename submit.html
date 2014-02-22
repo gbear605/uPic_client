@@ -19,6 +19,8 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
@@ -45,9 +47,9 @@
       </div>
 
       <div class="jumbotron">
-        <form enctype="multipart/form-data" action="upload/image" method="post">
+        <form id="addPic" enctype="multipart/form-data" action="upload/image" method="post">
     <input id="image-file" type="file" />
-    <input type="submit" />
+    <input id="in" type="submit" />
 </form>
       </div>
       <div class="footer">
