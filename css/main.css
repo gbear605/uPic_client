@@ -1,8 +1,20 @@
-html, body {
-    height: 100%;
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
+            -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
+            background-color: #B7EB34;
+
+}
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 
@@ -42,7 +54,7 @@ html, body {
 }
 
 .container {
-   
+    min-height: 100%;
     background-color: #B7EB34;
    
 }
@@ -55,7 +67,6 @@ html, body {
 .over {
     height:100%;
 
-    background-color: #B7EB34;
 }
 .votepicture:hover, .votepicture:visited{
     background-color: transparent;
@@ -70,4 +81,20 @@ html, body {
     
 }
 
+#image-file{
+    background-color: transparent;
+    width:200px;
+}
 
+#addPic{
+    width:100px;
+    margin-left:450px;
+}
+#in{
+    width:70px;
+    margin-left:10%;
+}
+
+#confirmation{
+    z-index: 0;
+}
