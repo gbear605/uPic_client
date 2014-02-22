@@ -15,18 +15,12 @@ query.find({
       console.log(object);
       //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
     }
-<<<<<<< HEAD
     var image1 = document.getElementById("img1");
     image1.src = images[0].get('imageOne');
     var image2 = document.getElementById("img2");
     image2.src = images[0].get('imageTwo');
     var description = document.getElementById("info");
     description.innerHTML =images[0].get('description');
-
-=======
-    	var i = images[0].get('imageOne');
-    	console.log(i);
->>>>>>> b89e0b7adf53c858411a52c3e0eeadb3cc98f439
   },
   error: function(error) {
     console.log("Error: " + error.code + " " + error.message);
