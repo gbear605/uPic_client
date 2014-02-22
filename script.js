@@ -57,13 +57,35 @@ testObject.save({foo: "bar"}).then(function(object) {
 //What happend when you click on the images
 $(document).ready(function(){
 	$("#img1").click(function(){
+		incrementVote("imageOneVotes");
 		cycle();
+
 	});
 	$("#img2").click(function(){
+		incrementVote("imageTwoVotes");
 		cycle();
 	});
 });
 
+//increments the vote for the inputed string (imageOneVotes or imageTwoVotes)
+function incrementVote(vote){
+	var query = new Parse.Query(Polls);
+	query.equalTo("objectId", images[index].id);
+	query.first({
+		success: function (Result) {
+			Result.save(null, {
+				success: function (result) {
+					var currentVotes = result.get(vote);
+					result.set(vote, currentVotes+1);
+
+					result.save();
+				}
+			})
+		}
+	});
+}
+
+//cycles to the next images
 function cycle(){
 	index++;
 	var image1 = document.getElementById("img1");
