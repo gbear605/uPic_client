@@ -22,7 +22,7 @@ window.onmousedown = function(e) {
         y: e.pageY
     };
     
-    alert(mousePos.x, mousePos.y);
+    alert([mousePos.x, mousePos.y]);
 };
 
 // Particle object
