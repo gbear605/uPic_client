@@ -57,25 +57,13 @@ testObject.save({foo: "bar"}).then(function(object) {
 //What happend when you click on the images
 $(document).ready(function(){
 	$("#img1").click(function(){
-<<<<<<< HEAD
-		//$("#img2").fadeTo("slow", 0);
-		//$("#img1").fadeTo("slow", 0);
 		incrementVote("imageOneVotes");
-=======
->>>>>>> 946d51e1f03184862eace534c3a88ef245c815a6
 		cycle();
 
 	});
 	$("#img2").click(function(){
-<<<<<<< HEAD
-		//$("#img2").fadeTo("slow", 0);
-		//$("#img1").fadeTo("slow", 0);
 		incrementVote("imageTwoVotes");
 		cycle();
-
-=======
-		cycle();
->>>>>>> 946d51e1f03184862eace534c3a88ef245c815a6
 	});
 });
 
