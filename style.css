@@ -1,0 +1,13 @@
+#voteQ{
+	text-align: center;
+	z-index: 0;
+	opacity: 0;
+}
+#canvas {
+    position:absolute;
+    top:5%;
+    left:30%;
+    border: 2px solid #999;
+    display: block;
+    margin: 15px auto;
+}
