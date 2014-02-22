@@ -50,18 +50,22 @@ var particle = {
         if ((this.x - this.radius) < 0 ) {
             this.x = this.radius;
             this.vx = -this.vx;
+            this.vx += 1000/fps;
         }
         if ((this.x + this.radius) > canvas.width ) {
             this.x = canvas.width - this.radius;
             this.vx = -this.vx;
+            this.vx += 1000/fps;
         }
         if ((this.y - this.radius) < 0) {
             this.y = this.radius;
             this.vy = -this.vy;
+            this.vy += 1000/fps;
         }
         if ((this.y + this.radius) > canvas.height ) {
             this.y = canvas.height - this.radius;
             this.vy = -this.vy;
+            this.vy += 1000/fps;
         }
     }
 };
