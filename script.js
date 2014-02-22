@@ -31,8 +31,6 @@ query.find({
 
 //what happend when your mouse enters the images.
 $(document).ready(function(){
-
-
 	$("#img1").mouseenter(function(){
 		$("#voteQ").fadeTo("slow", 1)
 	});
@@ -58,14 +56,10 @@ testObject.save({foo: "bar"}).then(function(object) {
 //What happend when you click on the images
 $(document).ready(function(){
 	$("#img1").click(function(){
-		//$("#img2").fadeTo("slow", 0);
-		//$("#img1").fadeTo("slow", 0);
 		cycle();
 	});
 	$("#img2").click(function(){
 		cycle();
-		//$("#img2").fadeTo("slow", 0);
-		//$("#img1").fadeTo("slow", 0);
 	});
 });
 

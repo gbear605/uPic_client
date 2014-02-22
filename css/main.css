@@ -1,8 +1,13 @@
-html, body {
-    height: 100%;
+html {
+    min-height: 100%;
+
     margin: 0;
     padding: 0;
     width: 100%;
+            -webkit-background-size: 100%;
+        -moz-background-size: 100%;
+        -o-background-size: 100%;
+        background-size: 100%;
 }
 
 
@@ -42,7 +47,7 @@ html, body {
 }
 
 .container {
-   
+    min-height: 100%;
     background-color: #B7EB34;
    
 }
@@ -69,13 +74,3 @@ html, body {
     width: 400px;
     
 }
-
-.info {
-    div.center {
-  margin-left: auto;
-  margin-right: auto;
-  width: 8em;
-}
-}
-
-
