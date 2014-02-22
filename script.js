@@ -2,8 +2,6 @@ var images;
 
 Parse.initialize("wvQUX0mYhNb3pl0AznV8iTslSWPLSjStPQPKvrgd", "kuPoQfcvFIF0H4ez18fzwZ2QQ7Lx6zBJRlNOqBPQ");
 
-
-
 var Polls = Parse.Object.extend("Polls");
 var query = new Parse.Query(Polls);
 //query.equalTo("playerName", "Dan Stemkoski");
@@ -17,6 +15,8 @@ query.find({
       console.log(object);
       //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
     }
+    	var i = images[0].get('imageOne');
+    	console.log(i);
   },
   error: function(error) {
     console.log("Error: " + error.code + " " + error.message);
@@ -27,7 +27,7 @@ query.find({
 //what happend when your mouse enters the images.
 $(document).ready(function(){
 
-	
+
 	$("#img1").mouseenter(function(){
 		$("#voteQ").fadeTo("slow", 1)
 	});
