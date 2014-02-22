@@ -52,32 +52,31 @@ testObject.save({foo: "bar"}).then(function(object) {
   //alert("yay! it worked");
 });*/
 
+
 });
 
 
 //What happend when you click on the images
 $(document).ready(function(){
 	$("#img1").click(function(){
-		index++;
 		//$("#img2").fadeTo("slow", 0);
 		//$("#img1").fadeTo("slow", 0);
-		var image1 = document.getElementById("img1");
-    	image1.src = images[index].get('imageOne');
-	    var image2 = document.getElementById("img2");
-	    image2.src = images[index].get('imageTwo');
-	    var description = document.getElementById("info");
-	    description.innerHTML = images[index].get('description');
+		cycle();
 	});
 	$("#img2").click(function(){
-		index++;
+		cycle();
 		//$("#img2").fadeTo("slow", 0);
 		//$("#img1").fadeTo("slow", 0);
-		var image1 = document.getElementById("img1");
-    	image1.src = images[index].get('imageOne');
-	    var image2 = document.getElementById("img2");
-	    image2.src = images[index].get('imageTwo');
-	    var description = document.getElementById("info");
-	    description.innerHTML = images[index].get('description');
 	});
 });
+
+function cycle(){
+	index++;
+	var image1 = document.getElementById("img1");
+    image1.src = images[index].get('imageOne');
+	var image2 = document.getElementById("img2");
+	image2.src = images[index].get('imageTwo');
+	var description = document.getElementById("info");
+	description.innerHTML = images[index].get('description');	
+}
 
