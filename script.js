@@ -1,1 +1,3 @@
-alert("HI")
+var vote = function(){
+	confirm("Are you sure");
+}
