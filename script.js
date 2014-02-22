@@ -1,3 +1,5 @@
+var images;
+
 
 //what happend when your mouse enters the images.
 $(document).ready(function(){
@@ -17,22 +19,23 @@ $(document).ready(function(){
 		$("#voteQ").fadeTo("slow", 0)
 	});
 
-	var TestObject = Parse.Object.extend("TestObject");
+	/*var TestObject = Parse.Object.extend("TestObject");
 var testObject = new TestObject();
 testObject.save({foo: "bar"}).then(function(object) {
   //alert("yay! it worked");
-});
+});*/
 
 var Polls = Parse.Object.extend("Polls");
 var query = new Parse.Query(Polls);
 //query.equalTo("playerName", "Dan Stemkoski");
 query.find({
   success: function(results) {
-    alert("Successfully retrieved " + results.length + " scores.");
+    //alert("Successfully retrieved " + results.length + " items in the queue.");
     // Do something with the returned Parse.Object values
+    images = results;
     for (var i = 0; i < results.length; i++) { 
       var object = results[i];
-      alert(object.id + ' - ' + object.get('imageOne'));
+      //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
     }
   },
   error: function(error) {
