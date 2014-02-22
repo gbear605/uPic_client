@@ -66,7 +66,7 @@ $(document).ready(function(){
 	    var image2 = document.getElementById("img2");
 	    image2.src = images[index].get('imageTwo');
 	    var description = document.getElementById("info");
-	    description.innerHTML = images[0].get('description');
+	    description.innerHTML = images[index].get('description');
 	});
 	$("#img2").click(function(){
 		index++;
@@ -77,7 +77,7 @@ $(document).ready(function(){
 	    var image2 = document.getElementById("img2");
 	    image2.src = images[index].get('imageTwo');
 	    var description = document.getElementById("info");
-	    description.innerHTML = images[0].get('description');
+	    description.innerHTML = images[index].get('description');
 	});
 });
 
