@@ -1,6 +1,4 @@
-html {
-    min-height: 100%;
-
+body, html {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -8,6 +6,15 @@ html {
         -moz-background-size: 100%;
         -o-background-size: 100%;
         background-size: 100%;
+            background-color: #B7EB34;
+
+}
+
+html{
+  height: 100%;
+}
+body {
+  min-height: 100%;
 }
 
 
@@ -60,7 +67,6 @@ html {
 .over {
     height:100%;
 
-    background-color: #B7EB34;
 }
 .votepicture:hover, .votepicture:visited{
     background-color: transparent;
