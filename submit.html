@@ -18,8 +18,8 @@
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
-    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -32,25 +32,31 @@
   </head>
 
   <body>
+  <div class="over">
 
     <div class="container">
       <div class="header">
         <ul class="nav nav-pills pull-right">
 		  <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <!--<li><a href="about.html">About</a></li>-->
           <li class="active"><a href="#">Submit</a></li>
         </ul>
         <h3 class="text-muted">uPic</h3>
       </div>
 
       <div class="jumbotron">
-        <p class="lead">Submit stuff goes here</p>
+        <form enctype="multipart/form-data" action="upload/image" method="post">
+    <input id="image-file" type="file" />
+    <input type="submit" />
+</form>
       </div>
       <div class="footer">
         <p>Made at Blueprint@HackMIT</p>
       </div>
 
     </div> <!-- /container -->
+    </div>
+
 
 
     <!-- Bootstrap core JavaScript

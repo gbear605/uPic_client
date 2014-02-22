@@ -1,6 +1,39 @@
-.text-muted {
-    color: #A32B2B;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
+
+
+
+.text-muted {
+    color: #F80535;
+
+    display: inline;
+
+    position: relative;
+
+    font: 50px Helvetica, Sans-Serif;
+
+    letter-spacing: 6px;
+
+    color: rgba(8, 8, 250, 0.5); 
+
+}
+
+
+
+.text-muted:after {
+
+    content: "uPic";
+
+    position: absolute; left: 5px; top: 3px;
+
+    color: rgba(23, 238, 221, 0.5);   
+
+}
+
 
 .jumbotron {
     background-color: #4C8BFA;
@@ -16,10 +49,23 @@
 
 .btn-default {
     background-color: #4C8BFA;
-border-color: #4C8BFA;
+    border-color: #4C8BFA;
 }
 
 .over {
+    height:100%;
 
     background-color: #B7EB34;
 }
+.votepicture:hover, .votepicture:visited{
+    background-color: transparent;
+    border: none;
+
+}
+
+.votepicture img {
+
+    height:300px;
+    width:auto;
+}
+

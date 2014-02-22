@@ -11,15 +11,17 @@
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="script.js"></script>
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
     <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
-
     <title>uPic</title>
 
-    <!-- CSS -->
+    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <link href="css/main.css" rel="stylesheet">
+
+    <link href="css/uPic.css" rel="stylesheet">
 
     <!-- Scripts -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
@@ -39,7 +41,7 @@
       <div class="header">
         <ul class="nav nav-pills pull-right">
           <li class="active"><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
+          <!--<li><a href="about.html">About</a></li>-->
           <li><a href="submit.html">Submit</a></li>
         </ul>
         <h3 class="text-muted">uPic</h3>
@@ -49,10 +51,10 @@
         <p id="voteQ">Vote?</p>
         <div class="btn-group btn-group-justified">
           <div class="btn-group">
-            <button type="button" onclick="vote();" class="btn btn-default"><img id= "img1" src="queue/current/image1.png" style="height:300px;width:auto;"></button>
+            <a href="#" onclick="vote();" class="votepicture"><img src="queue/current/image1.png"></a>
           </div>
           <div class="btn-group">
-            <button type="button" onclick="vote();" class="btn btn-default"><img id= "img2" src="queue/current/image2.png" style="height:300px;width:auto;"></button>
+            <a href="#" onclick="vote();" class="votepicture"><img src="queue/current/image2.png"></a>
           </div>
         </div>
         <p class="lead" id="info">stuff</p>
