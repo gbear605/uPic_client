@@ -1,0 +1,20 @@
+.text-muted {
+    color: #A32B2B;
+}
+
+.jumbotron {
+    background-color: #4C8BFA;
+    border-color: 1px solid black;
+
+}
+
+.container {
+   
+    background-color: #B7EB34;
+   
+}
+
+.btn-default {
+    background-color: #4C8BFA;
+border-color: #4C8BFA;
+}
