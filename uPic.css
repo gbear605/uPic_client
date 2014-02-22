@@ -20,7 +20,7 @@
 
 .text-muted:after {
 
-    content: "uPic";
+    content: "Pic";
 
     position: absolute; left: 10px; top: 5px;
 

@@ -1,6 +1,5 @@
 //what happend when your mouse enters the images.
 $(document).ready(function(){
-	alert("Hello World");
 	$("#img1").mouseenter(function(){
 		$("#voteQ").fadeTo("slow", 1)
 	});
