@@ -70,4 +70,12 @@ html, body {
     
 }
 
+.info {
+    div.center {
+  margin-left: auto;
+  margin-right: auto;
+  width: 8em;
+}
+}
+
 
