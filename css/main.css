@@ -1,5 +1,14 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+
+
 .text-muted {
-    color: #A32B2B;
+    color: #F80535;
 }
 
 .jumbotron {
@@ -16,10 +25,17 @@
 
 .btn-default {
     background-color: #4C8BFA;
-border-color: #4C8BFA;
+    border-color: #4C8BFA;
 }
 
 .over {
+    height:100%;
 
     background-color: #B7EB34;
 }
+.btn-default:hover{
+    background-color: transparent;
+    border: none;
+
+}
+
