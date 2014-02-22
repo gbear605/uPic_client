@@ -1,3 +1,5 @@
+var numvote = 0
+
 var vote = function(){
-	confirm("Are you sure");
+	confirm("Are you sure you want to vote");
 }
