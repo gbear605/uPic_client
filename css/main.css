@@ -33,9 +33,15 @@ html, body {
 
     background-color: #B7EB34;
 }
-.btn-default:hover{
+.votepicture:hover, .votepicture:visited{
     background-color: transparent;
     border: none;
 
+}
+
+.votepicture img {
+
+    height:300px;
+    width:auto;
 }
 
