@@ -1,6 +1,27 @@
 var images;
 
-	Parse.initialize("wvQUX0mYhNb3pl0AznV8iTslSWPLSjStPQPKvrgd", "kuPoQfcvFIF0H4ez18fzwZ2QQ7Lx6zBJRlNOqBPQ");
+Parse.initialize("wvQUX0mYhNb3pl0AznV8iTslSWPLSjStPQPKvrgd", "kuPoQfcvFIF0H4ez18fzwZ2QQ7Lx6zBJRlNOqBPQ");
+
+
+
+var Polls = Parse.Object.extend("Polls");
+var query = new Parse.Query(Polls);
+//query.equalTo("playerName", "Dan Stemkoski");
+query.find({
+  success: function(results) {
+    //alert("Successfully retrieved " + results.length + " items in the queue.");
+    // Do something with the returned Parse.Object values
+    images = results;
+    for (var i = 0; i < results.length; i++) { 
+      var object = results[i];
+      console.log(object);
+      //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
+    }
+  },
+  error: function(error) {
+    console.log("Error: " + error.code + " " + error.message);
+  }
+});
 
 
 //what happend when your mouse enters the images.
@@ -26,26 +47,6 @@ testObject.save({foo: "bar"}).then(function(object) {
   //alert("yay! it worked");
 });*/
 
-});
-
-
-var Polls = Parse.Object.extend("Polls");
-var query = new Parse.Query(Polls);
-//query.equalTo("playerName", "Dan Stemkoski");
-query.find({
-  success: function(results) {
-    //alert("Successfully retrieved " + results.length + " items in the queue.");
-    // Do something with the returned Parse.Object values
-    images = results;
-    for (var i = 0; i < results.length; i++) { 
-      var object = results[i];
-      console.log(object);
-      //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
-    }
-  },
-  error: function(error) {
-    console.log("Error: " + error.code + " " + error.message);
-  }
 });
 
 
