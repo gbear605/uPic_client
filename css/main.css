@@ -28,9 +28,11 @@ body {
 
     font: 30px Helvetica, Sans-Serif;
 
+    font-weight: bold;
+
     letter-spacing: 6px;
 
-    color: rgba(8, 8, 250, 0.5); 
+      color: rgba(23, 238, 221, 0.5); 
 
 }
 
@@ -42,8 +44,8 @@ body {
 
     position: absolute; left: 5px; top: 3px;
 
-    color: rgba(23, 238, 221, 0.5);   
-
+  
+  color: rgba(8, 8, 250, 0.5); 
 }
 
 
