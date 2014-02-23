@@ -12,6 +12,7 @@ query.find({
       var object = results[i];
     }
     cycle();
+    console.log(images[images.length-1]);
 
   },
   error: function(error) {
@@ -73,11 +74,16 @@ function incrementVote(vote){
 			})
 		}
 	});
+	console.log("incremeted for " + images[index].id);
 }
 
 //cycles to the next images
 function cycle(){
 	index++;
+	if(index == images.length){
+		window.location = "out.html";
+		return;
+	}
 	var image1 = document.getElementById("img1");
     image1.src = images[index].get('imageOne');
 	var image2 = document.getElementById("img2");
