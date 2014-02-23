@@ -8,7 +8,7 @@ $('#submitform').on('click', function(event){
 	var img2 = document.getElementById("image2form").value;
 	var description = document.getElementById("descriptionform").value;
 	var TestObject = Parse.Object.extend("Polls");
-	var testObject = new Polls();
+	var testObject = new TestObject;
 	testObject.save({imageOne: img1, imageTwo: img2, description: description, imageOneVotes: 0, imageTwoVotes: 0});
 }
 )
