@@ -1,5 +1,5 @@
 var images;
-var index = 0;
+var index = -1;
 
 Parse.initialize("wvQUX0mYhNb3pl0AznV8iTslSWPLSjStPQPKvrgd", "kuPoQfcvFIF0H4ez18fzwZ2QQ7Lx6zBJRlNOqBPQ");
 
@@ -11,17 +11,14 @@ query.find({
     //alert("Successfully retrieved " + results.length + " items in the queue.");
     // Do something with the returned Parse.Object values
     images = results;
+    console.log(images);
     for (var i = 0; i < results.length; i++) { 
       var object = results[i];
       console.log(object);
       //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
     }
-    var image1 = document.getElementById("img1");
-    image1.src = images[0].get('imageOne');
-    var image2 = document.getElementById("img2");
-    image2.src = images[0].get('imageTwo');
-    var description = document.getElementById("info");
-    description.innerHTML =images[0].get('description');
+    cycle();
+
   },
   error: function(error) {
     console.log("Error: " + error.code + " " + error.message);
@@ -77,7 +74,6 @@ function incrementVote(vote){
 				success: function (result) {
 					var currentVotes = result.get(vote);
 					result.set(vote, currentVotes+1);
-
 					result.save();
 				}
 			})
@@ -94,5 +90,9 @@ function cycle(){
 	image2.src = images[index].get('imageTwo');
 	var description = document.getElementById("info");
 	description.innerHTML = images[index].get('description');	
+	var img1votes = document.getElementById("vote1");
+    img1votes.innerHTML = "+" + images[index].get('imageOneVotes');
+    var img2votes = document.getElementById("vote2");
+    img2votes.innerHTML = "+" + images[index].get('imageTwoVotes');
 }
 
