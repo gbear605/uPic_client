@@ -113,3 +113,10 @@ body {
     height:20px;
     margin-right: 30%
 }
+
+#img1{
+    float: left;
+}
+#img2{
+    float: right;
+}
