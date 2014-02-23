@@ -13,10 +13,6 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-#refresh{
-
-            border:4px dotted red;
-}
 
 html{
   height: 100%;
