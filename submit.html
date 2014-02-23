@@ -12,9 +12,6 @@
 
     <script src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
 
-    <script type="text/javascript" src="script.js"></script>
-
-
     <title>uPic - Submit</title>
 
     <!-- Bootstrap core CSS -->
@@ -24,7 +21,6 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="main.css">
 
-    <script type="text/javascript" src="submit.js"></script>
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -63,7 +59,7 @@
             <label for="descriptionform">Description</label>
             <input type="text" class="form-control" id="descriptionform" placeholder="">
           </div>
-          <button type="submit" class="btn btn-default">Submit</button>
+          <button type="submit" onclick = "submit();" class="btn btn-default">Submit</button>
         </form>
       </div>
       <div class="footer">
@@ -78,5 +74,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="submit.js"></script>
+
   </body>
 </html>
