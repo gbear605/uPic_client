@@ -54,11 +54,12 @@
       </div>
 
       <div class="jumbotron">
-        <form id="addPic" enctype="multipart/form-data" action="upload/image" method="post">
-    <input id="image-file" type="file" />
-    <input id="in" type="submit" />
-</form>
-      <div><p id="confirmation">Make this a good one!</p></div>
+        <form id="addPic" action="upload/image" method="post">
+          <p>First Image</p><input id="image1" type="text" />
+          <p>Second Image</p><input id="image2" type="text" />
+          <p>Description</p><input id="description" type="text" />
+          <input id="in" type="submit" />
+        </form>
       </div>
       <div class="footer">
         <p>Made at Blueprint@HackMIT</p>
