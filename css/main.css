@@ -64,10 +64,6 @@ body {
     border-color: #4C8BFA;
 }
 
-.over {
-    height:100%;
-
-}
 .votepicture:hover, .votepicture:visited{
     background-color: transparent;
     border: none;
@@ -75,7 +71,7 @@ body {
 }
 
 .votepicture img {
-
+    max-height:400px;
     height:auto;
     width: 400px;
     
