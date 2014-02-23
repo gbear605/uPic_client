@@ -11,6 +11,7 @@ query.find({
     //alert("Successfully retrieved " + results.length + " items in the queue.");
     // Do something with the returned Parse.Object values
     images = results;
+    console.log(images);
     for (var i = 0; i < results.length; i++) { 
       var object = results[i];
       console.log(object);
