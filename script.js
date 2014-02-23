@@ -22,17 +22,25 @@ query.find({
 
 //what happend when your mouse enters the images.
 $(document).ready(function(){
-	$("#img1").mouseenter(function(){
-		$("#voteQ").fadeTo("slow", 1)
+	$("#img1").mouseover(function(){
+		$("#voteQ").fadeTo("slow", 1, function() {
+    // Animation complete.
+  });
 	});
 	$("#img1").mouseleave(function(){
-		$("#voteQ").fadeTo("slow", 0)
+		$("#voteQ").fadeTo("slow", 0, function() {
+    // Animation complete.
+  });
 	});
-	$("#img2").mouseenter(function(){
-		$("#voteQ").fadeTo("slow", 1)
+	$("#img2").mouseover(function(){
+		$("#voteQ").fadeTo("slow", 1, function() {
+    // Animation complete.
+  });
 	});
 	$("#img2").mouseleave(function(){
-		$("#voteQ").fadeTo("slow", 0)
+		$("#voteQ").fadeTo("slow", 0, function() {
+    // Animation complete.
+  });
 	});
 
 	/*var TestObject = Parse.Object.extend("TestObject");
