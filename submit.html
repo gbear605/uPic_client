@@ -54,11 +54,20 @@
       </div>
 
       <div class="jumbotron">
-        <form id="addPic" action="upload/image" method="post">
-          <p>First Image</p><input id="image1" type="text" />
-          <p>Second Image</p><input id="image2" type="text" />
-          <p>Description</p><input id="description" type="text" />
-          <input id="in" type="submit" />
+        <form role="form">
+          <div class="form-group">
+            <label for="image1">Image 1</label>
+            <input type="text" class="form-control" id="image1" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="image2">Image 2</label>
+            <input type="text" class="form-control" id="image2" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="description">Description</label>
+            <input type="text" class="form-control" id="description" placeholder="">
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
         </form>
       </div>
       <div class="footer">
