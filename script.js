@@ -5,17 +5,11 @@ Parse.initialize("wvQUX0mYhNb3pl0AznV8iTslSWPLSjStPQPKvrgd", "kuPoQfcvFIF0H4ez18
 
 var Polls = Parse.Object.extend("Polls");
 var query = new Parse.Query(Polls);
-//query.equalTo("playerName", "Dan Stemkoski");
 query.find({
   success: function(results) {
-    //alert("Successfully retrieved " + results.length + " items in the queue.");
-    // Do something with the returned Parse.Object values
     images = results;
-    console.log(images);
     for (var i = 0; i < results.length; i++) { 
       var object = results[i];
-      console.log(object);
-      //alert(object.id + ' - ' + object.get('imageOne') + ' - ' + object.get('imageTwo') + ' - ' + object.get('description'));
     }
     cycle();
 
